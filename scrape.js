@@ -69,7 +69,7 @@ scraper.grabNewItems = function(href) {
           obj.description = description.split(" - ")[1];
           // Category of item
           let category = $(el)
-            .find(".category")
+            .find(".category hidden")
             .text();
           obj.category = category;
 
